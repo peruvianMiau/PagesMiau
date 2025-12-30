@@ -185,12 +185,16 @@ section{
     gap: 10%;
 }
 .imgs1 img{
-    padding: 10px;
     border-radius: 20px;
+    border:2px black solid;
+    justify-content: center;
+    align-items: center;
 }
 .imgs2 img{
-    padding: 10px;
     border-radius: 20px;
+    border:2px black solid;
+        justify-content: center;
+    align-items: center;
 }
 /*==============*/
 /*====Quehace====*/
