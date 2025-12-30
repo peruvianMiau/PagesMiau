@@ -193,7 +193,7 @@ section{
 .imgs2 img{
     border-radius: 20px;
     border:2px black solid;
-        justify-content: center;
+    justify-content: center;
     align-items: center;
 }
 /*==============*/
