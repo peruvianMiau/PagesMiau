@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    cursor: default;
+}
+.cursor {
+    width: 40px;
+    height: 40px;
+    background-image: url("Imagenes/toothless-dragon-toothless.gif");
+    background-size: cover;
+    position: fixed;
+    pointer-events: none; /* importantísimo */
+    z-index: 9999;
+}
 section{
     scroll-margin-top: 120px;
 }
@@ -177,7 +189,7 @@ section{
     text-align: center;
     color:white;
     transition: 1s;
-    cursor: pointer;
+    cursor:default;
     font-weight: 700;
     font-size: 20px;
 }
@@ -205,7 +217,7 @@ section{
     gap: 3%;
     justify-content: center;
     margin-top: 200px;
-    padding-bottom: 100px;
+    /*padding-bottom: 100px;*/
 }
 .linea{
     width: 2px;
@@ -234,7 +246,7 @@ section{
     line-height: 1.5;
 }
 .hace button{
-    background-color: rgb(224, 142, 83);
+    background: linear-gradient(to right, rgb(252, 148, 221),rgb(140, 39, 216), rgb(36, 118, 232));
     border-radius: 100px;
     margin-left: 50px;
     margin-right: 50px;
@@ -245,6 +257,22 @@ section{
     text-decoration: none;
     color:rgb(39, 0, 97);
 }
+.hace button:hover{
+    background: linear-gradient(to right, rgb(36, 118, 232), rgb(140, 39, 216), rgb(252, 148, 221));
+    transition: 1s;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+}
+.hace button a:hover{
+    color: white;
+    transition: 1s;
+}
+
+
+
+
+
                         /*==============*/
                         /*====Footer====*/
                         /*==============*/
@@ -254,4 +282,14 @@ section{
 }
 .abajo2{
     padding-left: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iconos{
+    display: flex;
+    gap: 20px;
+}
+.iconos li{
+    list-style: none;
 }
